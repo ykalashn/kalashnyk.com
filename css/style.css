@@ -229,22 +229,6 @@ margin-top: 1rem;
   padding-top: calc(var(--global-section-padding) + 81px);
 }
 
-/* Tower Defence hero */
-.td-hero {
-  background: url('https://res.cloudinary.com/yevhenii-kalashnyk/image/upload/v1771623637/herobackground_q6cjk7.png') center / cover no-repeat;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.td-hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(11, 18, 32, 0.6);
-  z-index: 0;
-}
-
 /* =========================
   7. Cards & Images
   ========================= */
