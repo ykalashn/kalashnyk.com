@@ -6,19 +6,20 @@
       window.location.pathname === '/index.html';
 
     const projectsHref = isIndex ? '#projects' : '/#projects';
+    const contactHref = isIndex ? '#contact' : '/#contact';
 
     const navHTML = `
 <nav id="mainNav" class="navbar navbar-expand-lg py-3 px-2 position-fixed top-0 w-100">
   <div class="container position-relative">
     <!-- Name left on desktop, hidden on mobile -->
-    <a class="navbar-brand fw-semibold d-none d-lg-flex align-items-center position-absolute start-0 top-50 translate-middle-y" href="index.html" style="z-index:2;">
+    <a class="navbar-brand fw-semibold d-none d-lg-flex align-items-center position-absolute start-0 top-50 translate-middle-y" href="/" style="z-index:2;">
       <span class="navbar-name">Yevhenii Kalashnyk</span>
     </a>
     <!-- Logo left, name center, hamburger right on mobile -->
-    <a class="navbar-logo-link d-flex align-items-center justify-content-center mx-auto" href="https://kalashnyk.com/about" >
+    <a class="navbar-logo-link d-flex align-items-center justify-content-center mx-auto" href="/about" >
       <img src="https://res.cloudinary.com/yevhenii-kalashnyk/image/upload/w_250,h_250/f_auto,q_auto/v1755963784/logo_trtynm.svg" alt="Logo" class="navbar-logo" />
     </a>
-    <a class="navbar-name-mobile fw-semibold d-lg-none" href="https://kalashnyk.com">Yevhenii Kalashnyk</a>
+    <a class="navbar-name-mobile fw-semibold d-lg-none" href="/">Yevhenii Kalashnyk</a>
     <button class="navbar-toggler custom-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="custom-hamburger-icon">
         <span></span>
@@ -28,13 +29,13 @@
     <div class="collapse navbar-collapse" id="mainNavCollapse">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
         <li class="nav-item">
-          <a class="nav-link" href="https://kalashnyk.com/about">About</a>
+          <a class="nav-link" href="/about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="${projectsHref}">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="${contactHref}">Contact</a>
         </li>
       </ul>
     </div>
